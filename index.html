@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READ MORE OR LESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Read More & Less </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima impedit placeat eveniet sequi aut,
+                reprehenderit sunt rem vitae sed. Perferendis qui aperiam neque inventore nulla voluptatum explicabo
+                quis ducimus, nemo error veniam facilis facere quod recusandae quia minima ut praesentium molestiae
+                pariatur doloribus! Error ea doloremque, natus tempora laboriosam tenetur. Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Aperiam neque totam iusto dolores voluptatibus quia libero minus laborum
+                molestias error ullam fugit unde labore aut incidunt repellendus perferendis reiciendis, soluta
+                provident dolor ad. Minus aliquid dolore placeat, ex numquam nemo? <span id="para">Lorem ipsum
+                    dolor sit
+                    amet consectetur adipisicing elit. Sunt, nesciunt. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reiciendis quod est aliquid praesentium enim veniam dolorem! Saepe porro inventore
+                    id nisi dolore quasi placeat minima cumque natus, perspiciatis delectus laborum? Corrupti, quis
+                    debitis cumque </span><span id="para1"> Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. At nemo velit quam aperiam autem, nobis fuga facere id molestiae consequuntur illo
+                    magni explicabo quia est debitis accusantium, rem incidunt perspiciatis dolor. Natus dicta obcaecati
+                    nostrum magnam vitae acc!</span><span id="para2"> Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Hic eius doloribus quis magnam necessitatibus pariatur rerum
+                    magni vero, autem omnis sit a harum, dicta nulla praesentium nam, iusto perspiciatis velit inventore
+                    voluptas rem voluptatem reprehenderit ipsam! Cum illo accusamus iusto eius corrupti molestias. Modi
+                    .</span></p>
+            <button type="button" id="btn" onclick="readless()"   class="b1">Read More</button>
+            <button type="button" id="btn1" onclick="readless2()" class="b2">Read More</button>
+            <button type="button" id="btn2" onclick="readless3()" class="b3">Read More</button>
+            <button type="button" id="btn3" onclick="readless4()" class="b4">Read Less</button>
+        </div>
+    </div>
+    <script>
+        function readless() {
+            var para = document.getElementById("para")
+            var para1 = document.getElementById("para1")
+            var para2 = document.getElementById("para2")
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            para1.style.display = "none"
+            para2.style.display = "none"
+            para.style.display = "inline"
+            btn.style.display = "none"
+            btn1.style.display = "inline"
+
+        }
+        function readless2() {
+            var para = document.getElementById("para")
+            var para1 = document.getElementById("para1")
+            var para2 = document.getElementById("para2")
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            para1.style.display = "inline"
+            btn2.style.display = "inline"
+            btn1.style.display = "none"
+        }
+        function readless3() {
+            var para = document.getElementById("para")
+            var para1 = document.getElementById("para1")
+            var para2 = document.getElementById("para2")
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            para2.style.display = "inline"
+            btn2.style.display = "none"
+            btn1.style.display = "none"
+            btn3.style.display = "inline"
+        }
+        function readless4() {
+            var para = document.getElementById("para")
+            var para1 = document.getElementById("para1")
+            var para2 = document.getElementById("para2")
+            var btn = document.getElementById("btn")
+            var btn1 = document.getElementById("btn1")
+            var btn2 = document.getElementById("btn2")
+            para2.style.display = "none"
+            para1.style.display = "none"
+            para.style.display = "none"
+            btn2.style.display = "none"
+            btn1.style.display = "none"
+            btn3.style.display = "none"
+            btn.style.display = "inline"
+        }
+    </script>
+
+</body>
+
+</html>
